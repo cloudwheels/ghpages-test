@@ -38,10 +38,5 @@ Having trouble with Pages? Check out our [documentation](https://docs.github.com
 
 ### Script
 
-<script  type="text/javascript">
-var items = ['cat','dog','biscuit'];
-var i;
-for (i = 0; i < items.length; i++) {
-  text += items[i] + "<br>";
-}
+<script  type="text/javascript" src="{{ base.url | prepend: site.url }}/test.js">
 </script>
