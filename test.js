@@ -1,9 +1,9 @@
  $(document).ready(function () {
 
-var items = ['cat','dog','biscuit'];
+var items = ['2-system','3-work','4-admin'];
 var i;
 for (i = 0; i < items.length; i++) {
-  $('#content').append(items[i] + '<br>');
+  $('#content').append('<a href="./rules.html#' + items[i] + '"></a>');
 }
 
 });
