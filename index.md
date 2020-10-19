@@ -41,3 +41,18 @@ Having trouble with Pages? Check out our [documentation](https://docs.github.com
 <script  type="text/javascript" src="{{ base.url | prepend: site.url }}/ghpages-test/test.js">
 </script>
 <div id="content"></div>
+
+ <table class="bounty-table">
+                    <thead>
+                        <tr>
+                            <th>
+                                <div class="left-column">Name</div>
+                            </th>
+                            <th>Reward</th>
+                        </tr>
+                    </thead>
+                    <tbody id="bounties-tospec">
+
+                    </tbody>
+                </table>
+                <br>
