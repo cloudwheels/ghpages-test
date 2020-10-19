@@ -38,6 +38,6 @@ Having trouble with Pages? Check out our [documentation](https://docs.github.com
 
 ### Script
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script  type="text/javascript" src="{{ base.url | prepend: site.url }}/test.js">
+<script  type="text/javascript" src="{{ base.url | prepend: site.url }}/ghpages-test/test.js">
 </script>
 <div id="content"></div>
