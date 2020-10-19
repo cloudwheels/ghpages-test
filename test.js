@@ -30,8 +30,8 @@ $.ajax(
                         //let hasLabels = data.filter(item => item.hasOwnProperty('labels'));
                         //let filtered = hasLabels.filter(item => item.labels[0].color == 'green');
                         
-                        console.log('Filtered data:');
-                        console.dir(filtered);
+                        //console.log('Filtered data:');
+                        //console.dir(filtered);
 
                         $('#bounties-tospec').append(
                             $.map(data, function (item, index) {
