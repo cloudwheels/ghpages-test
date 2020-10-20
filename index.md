@@ -1,5 +1,5 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="app.js"></script>
+<script src="./app.js"></script>
 
 ## 2.1 PROJECT BOUNTIES
 
