@@ -2,6 +2,8 @@
 <script src="./detail.js"></script>
 
 **Task:** 
+
 <div id="bounty-info-name"></div>
-**Reward:**  
+**Reward:**
+
 <div id="bounty-info-reward"></div>
