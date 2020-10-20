@@ -8,6 +8,7 @@
 
 <div id="bounty-info-reward"></div>
 
+
 <div>
   <a href="http://trello" class="btn">RESERVE TASK</a>
 </div>
