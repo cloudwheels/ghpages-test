@@ -196,7 +196,7 @@ function listToTable(tableId, projectHeaderName, data){
                     <tbody>
     `
     data.map(item=>{
-        strHTML += `<tr><td><a href="./bounty-detail.html?bountytrellourl=${''}&bountyname=${''}&bountyrewardusd=${''}"><div class="left-column">${item.checklistItemName}</div></a></td><td><div>${item.cardName}</div></td><td><div>${item.cardSkills}</div></td><td><div>${item.rewardDash} Dash ($${item.rewardUSD})</div></td></tr>`;
+        strHTML += `<tr><td><a href="./bounty-detail.html?bountytrellourl=${''}&bountyname=${item.checklistItemName}&bountyrewardusd=${item.rewardUSD}"><div class="left-column">${item.checklistItemName}</div></a></td><td><div>${item.cardName}</div></td><td><div>${item.cardSkills}</div></td><td><div>${item.rewardDash} Dash ($${item.rewardUSD})</div></td></tr>`;
     });
 
     strHTML += `
