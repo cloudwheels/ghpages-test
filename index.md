@@ -20,22 +20,22 @@ Find out more about <a href="rules.html#3-1-concepts">creating concepts</a>
 <br>
 # Available Bounties
 
-## 2.1 PROJECT BOUNTIES
+## PROJECT BOUNTIES
 
 <div id="list_project"></div>
 
-## 2.2 SPECIFICATION BOUNTIES
+## SPECIFICATION BOUNTIES
 
 <div id="list_spec"></div>
 
-## 2.3 SERVICE BOUNTIES
+## SERVICE BOUNTIES
 
 <div id="list_service"></div>
 
-## 2.4 JOB BOUNTIES
+## JOB BOUNTIES
 
 <div id="list_job"></div>
 
-## 2.5 QA BOUNTIES
+## QA BOUNTIES
 
 <div id="list_qa"></div>
