@@ -8,7 +8,7 @@ $(document).ready(function () {
     $.ajax(
         {
             type: "GET",
-            url: 'https://api.trello.com/1/board/D5wypdJ0/cards?checklists=all&fields=id,name,idList&customFieldItems=true&members=true&member_fields=username&key=910955be8cf85efce2eb715fea302f2b',
+            url: 'https://api.trello.com/1/board/D5wypdJ0/cards?checklists=all&fields=id,name,idList,shortUrl,desc&customFieldItems=true&members=true&member_fields=username&key=910955be8cf85efce2eb715fea302f2b',
             data: "{}",
             contentType: "application/json; charset=utf-8",
             dataType: "json",
@@ -34,7 +34,9 @@ $(document).ready(function () {
 
                     let cardId = card.id;
                     let cardName = card.name;
+                    let cardDesc = card.desc;
                     let listId = card.idList;
+                    let cardUrl = card.shortUrl;
                     let cardAdmin = null;
                     if (card.members.length > 0) {
                         cardAdmin = card.members[0].username;
@@ -50,6 +52,7 @@ $(document).ready(function () {
 
                                 //only bother adding if it doesn't have an assigned member
                                 if (checklistItemIdMember == null) {
+                                    let taskId = checklistItem.id;
                                     let checklistItemName = checklistItem.name;
                                     let extractedDashAmount = extractReward(checklistItemName);
                                     //convert to USD 
@@ -62,7 +65,7 @@ $(document).ready(function () {
                                         dashUSDAmount = dashAmountFloat * DASHUSD;
                                     }
 
-                                    tasks.push({ cardId: cardId, cardName: cardName, listId: listId, admin: cardAdmin, workType: cardCustomFields.workType, cardSkills: cardCustomFields.skills, checklistName: checklistName, checklistItemName: checklistItemName, rewardDash: dashAmountFloat, rewardUSD: dashUSDAmount });
+                                    tasks.push({ taskId: taskId, cardId: cardId, cardName: cardName, cardDesc: cardDesc, listId: listId, cardUrl: cardUrl, admin: cardAdmin, workType: cardCustomFields.workType, cardSkills: cardCustomFields.skills, checklistName: checklistName, checklistItemName: checklistItemName, rewardDash: dashAmountFloat, rewardUSD: dashUSDAmount });
                                 }
                             })
                         }
@@ -86,7 +89,7 @@ $(document).ready(function () {
                 lists.job = tasks.filter(item => item.checklistName == 'Work Tasks' && item.workType == 'Job');
                 lists.qa = tasks.filter(item => item.checklistName == 'QA Tasks');
 
-                
+
                 console.log('Lists:');
                 console.dir(lists);
 
@@ -178,7 +181,7 @@ function extractReward(strTaskDescription) {
 
 }
 
-function listToTable(tableId, projectHeaderName, data){
+function listToTable(tableId, projectHeaderName, data) {
     let strHTML = '';
 
     strHTML += `
@@ -195,8 +198,8 @@ function listToTable(tableId, projectHeaderName, data){
                     </thead>
                     <tbody>
     `
-    data.map(item=>{
-        strHTML += `<tr><td><a href="./bounty-detail.html?bountytrellourl=${''}&bountyname=${item.checklistItemName}&bountyrewardusd=${item.rewardUSD}"><div class="left-column">${item.checklistItemName}</div></a></td><td><div>${item.cardName}</div></td><td><div>${item.cardSkills}</div></td><td><div>${item.rewardDash} Dash ($${item.rewardUSD})</div></td></tr>`;
+    data.map(item => {
+        strHTML += `<tr><td><a href="./bounty-detail.html?bountytaskid=${item.taskId}&bountytrellourl=${item.cardUrl}&bountyname=${item.checklistItemName}&bountycardname=${item.cardName}&bountycarddesc=${item.cardDesc}&bountyrewardusd=${item.rewardUSD}&bountyrewarddash=${item.rewardDash}&bountyadmin=${item.admin}"><div class="left-column">${item.checklistItemName}</div></a></td><td><div>${item.cardName}</div></td><td><div>${item.cardSkills}</div></td><td><div>${item.rewardDash} Dash ($${item.rewardUSD})</div></td></tr>`;
     });
 
     strHTML += `
