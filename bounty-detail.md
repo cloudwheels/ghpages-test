@@ -3,18 +3,14 @@
 <div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v8.0" nonce="3TY5c3bh"></script>
  <div class="nav-container">
-                <!--
-                <div class="top-nav"><a href="#" class="top-nav-border">Intro</a><a href="#"
-                        class="top-nav-border">Earn</a><a href="#" class="top-nav-border">Protocol</a><a
-                        href="#">Reports</a></div>
-                -->
+                <div class="top-nav"><a href="#" class="top-nav-border">Bounties</a><a href="index.html"
+                        class="top-nav-border">Rewards</a><a href="rules.html#" class="top-nav-border">Rewards</a><a
+                        href="rules.html">Rules</a></div>
                 <div class="nav-corner">
-                    <!--
-                    <a href="#">Feedback</a><a href="https://t.me" target="_blank"><img src="/assets/image/telegram.svg"
+                    <a href="#">Feedback</a><a href="https://t.me" target="_blank"><img src="assets/image/telegram.svg"
                             alt="telegram"></a><a href="https://twitter.com/dashincubator" target="_blank"><img
-                            src="/assets/image/twitter.svg" alt="Dash Incubator on Twitter"></a>
-                    -->
-                    <a href="http://chat.dashdevs.org" target="_blank"><img src="/assets/image/discord.svg" alt="Chat on the Dash Dev Discord"></a>
+                            src="assets/image/twitter.svg" alt="Dash Incubator on Twitter"></a>
+                    <a href="http://chat.dashdevs.org" target="_blank"><img src="assets/image/discord.svg" alt="Chat on the Dash Dev Discord"></a>
                 </div>
                 <a href="./"><img class="nav-logo" src="assets/image/logo.png" alt="incubator logo"></a>
             </div>
