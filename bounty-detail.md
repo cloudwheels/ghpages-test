@@ -7,7 +7,7 @@
                         class="top-nav-border">Rewards</a><a href="rules.html#" class="top-nav-border">Rewards</a><a
                         href="rules.html">Rules</a></div>
                 <div class="nav-corner">
-                    <a href="#">Feedback</a><a href="https://t.me" target="_blank"><img src="assets/image/telegram.svg"
+                    <a href="https://t.me" target="_blank"><img src="assets/image/telegram.svg"
                             alt="telegram"></a><a href="https://twitter.com/dashincubator" target="_blank"><img
                             src="assets/image/twitter.svg" alt="Dash Incubator on Twitter"></a>
                     <a href="http://chat.dashdevs.org" target="_blank"><img src="assets/image/discord.svg" alt="Chat on the Dash Dev Discord"></a>
