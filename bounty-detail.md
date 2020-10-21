@@ -21,16 +21,14 @@
 **Project**
 <div id="bounty-info-project"></div>
 **Project Description**
-<div id="bounty-info-project"></div>
+<div id="bounty-info-desc"></div>
 **Work Type**
 <div id="bounty-info-worktype"></div>
 **Admin**
 <div id="bounty-info-admin"></div>
 **Status**
 <div id="bounty-info-status"></div>
-<div>
-  <a href="http://trello" class="btn">RESERVE TASK</a>
-</div>
+<div id="bounty-info-trellolink"></div>
 <br>
 **Share this bounty task**
 <div class="fb-share-button" data-layout="button" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
