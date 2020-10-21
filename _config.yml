@@ -2,7 +2,7 @@ theme: jekyll-theme-hacker
 title: Dash Incubator
 tagline: Get rewards for helping to build Dash
 description: Claim bounties for new ideas, speicifying and working on tasks, and carring out QA on Dash blockhain software.
-logo: /assets/incubator-logo.png
+logo: /assets/image/incubator-logo.jpg
 social:
   name: Dash Incubator
   links:
