@@ -13,11 +13,11 @@
                 <a href="./"><img class="nav-logo" src="assets/image/logo.png" alt="incubator logo"></a>
             </div>
 
-<div id="concept-info">
 ## Get rewards for your ideas
+<div id="concept-info">
 Find out more about <a href="rules.html#3-1-concepts">creating concepts</a>
 </div>
-
+<br>
 # Available Bounties
 
 ## 2.1 PROJECT BOUNTIES
