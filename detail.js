@@ -8,8 +8,12 @@ $.urlParam = function (name) {
 
 $(document).ready(function () {
     $('#bounty-info-name').append(decodeURIComponent($.urlParam('bountyname')))
-    $('#bounty-info-reward').append(decodeURIComponent($.urlParam('bountyrewardusd')))
+    $('#bounty-info-project').append(decodeURIComponent($.urlParam('bountycardname')))
+    $('#bounty-info-desc').append(decodeURIComponent($.urlParam('bountycarddesc')))
+    $('#bounty-info-admin').append(decodeURIComponent($.urlParam('bountyadmin')))
+    $('#bounty-info-worktype').append(decodeURIComponent($.urlParam('bountyworktype')))
+    $('#bounty-info-reward').append(decodeURIComponent($.urlParam('bountyrewarddash'))+'Dash ($'+ decodeURIComponent($.urlParam('bountyrewardusd')))
     var trellolink = decodeURIComponent($.urlParam('bountytrellourl'));
-    $('#bounty-info-trellolink').append('<a href="' + trellolink + '">' + trellolink + '</a>')
+    $('#bounty-info-trellolink').append('<a class="btn" href="' + trellolink + '">RESERVE BOUNTY</a>')
 
 })
