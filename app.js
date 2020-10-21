@@ -199,7 +199,7 @@ function listToTable(tableId, projectHeaderName, data) {
                     <tbody>
     `
     data.map(item => {
-        strHTML += `<tr><td><a href="./bounty-detail.html?bountytaskid=${item.taskId}&bountytrellourl=${item.cardUrl}&bountyname=${item.checklistItemName}&bountycardname=${item.cardName}&bountycarddesc=${item.cardDesc}&bountyrewardusd=${item.rewardUSD}&bountyrewarddash=${item.rewardDash}&bountyadmin=${item.admin}"><div class="left-column">${item.checklistItemName}</div></a></td><td><div>${item.cardName}</div></td><td><div>${item.cardSkills}</div></td><td><div>${item.rewardDash} Dash ($${item.rewardUSD})</div></td></tr>`;
+        strHTML += `<tr><td><a href="./bounty-detail.html?bountytaskid=${item.taskId}&bountytrellourl=${item.cardUrl}&bountyname=${item.checklistItemName}&bountycardname=${item.cardName}&bountycarddesc=${item.cardDesc}&bountyrewardusd=${item.rewardUSD}&bountyrewarddash=${item.rewardDash}&bountyadmin=${item.admin}&bountyworktype=${item.worktype}"><div class="left-column">${item.checklistItemName}</div></a></td><td><div>${item.cardName}</div></td><td><div>${item.cardSkills}</div></td><td><div>${item.rewardDash} Dash ($${item.rewardUSD})</div></td></tr>`;
     });
 
     strHTML += `
