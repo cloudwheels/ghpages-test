@@ -1,6 +1,4 @@
-# Dash Incubator
-
- <div class="nav-container">
+<div class="nav-container">
                 <div class="top-nav"><a href="index.html" class="top-nav-border">Bounties</a><a href="rules.html#" class="top-nav-border">Rewards</a><a
                         href="rules.html">Rules</a></div>
                 <div class="nav-corner">
