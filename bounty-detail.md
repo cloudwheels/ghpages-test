@@ -28,6 +28,7 @@
 <div id="bounty-info-admin"></div>
 **Status**
 <div id="bounty-info-status"></div>
+Available
 <div id="bounty-info-trellolink"></div>
 <br>
 **Share this bounty task**
