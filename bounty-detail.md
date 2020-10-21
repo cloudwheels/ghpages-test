@@ -36,3 +36,9 @@ Available
 <a href="https://twitter.com/share" class="twitter-share-button" data-hashtags="dashincubator" data-via="dashincubator" data-count="vertical">Tweet</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 <br>
+<div id="rules-link"></div>
+<div id="concept-info">
+## Get rewards for your ideas
+Find out more about <a href="rules.html#3-1-concepts">creating concepts</a>
+</div>
+
