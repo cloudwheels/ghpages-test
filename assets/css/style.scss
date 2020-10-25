@@ -14,8 +14,21 @@ header {
     text-shadow: none;
 }
 
-.fb_iframe_widget {
+
+#tweet-button{
+    display: inline-block;
+}
+
+.page_share{
+    position: relative;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    clear: both;
     vertical-align: top;
+    line-height: normal
+
 }
 
 /* nav */

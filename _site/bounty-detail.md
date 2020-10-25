@@ -26,8 +26,14 @@
         $('#rules-link').append(strInfoLink);
         let encodedLink = encodeURIComponent(window.location.href);
         console.log('encoded link', encodedLink);
+
+        let twitterText = 'Claim bounty rewards for helping to build Dash blockchain software - check out this task:';
+        
+        let encodedText = encodeURIComponent(twitterText);
+        encodedText = twitterText.replace("%20", "%2520");
+        let twitterUrl = `https://twitter.com/intent/tweet?url=${encodedLink}&text=${encodedText}`;
         let twitterButton = `<a class="twitter-share-button"
-    href="https://twitter.com/intent/tweet?url=${encodedLink}">Tweet</a>`
+    href="${twitterUrl}">Tweet</a>`
         $('#tweet-button').append(twitterButton);
     })
 
@@ -81,11 +87,13 @@
 <div id="rules-link"></div>
 <div id="bounty-info-trellolink"></div>
 <br>
+
 ### Share this bounty task
+<div class="page_share">
 <div class="fb-share-button" data-layout="button" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
-<div>
-    <span id="tweet-button"></span>
+<div id="tweet-button"></div>
 </div>
+<br>
 
 ## Get rewards for your ideas
 <div id="concept-info">

@@ -271,6 +271,22 @@ function bountyDetailInfo(workType){
     return strInfoLink;
 }
 </script>
+    <script>window.twttr = (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0],
+        t = window.twttr || {};
+      if (d.getElementById(id)) return t;
+      js = d.createElement(s);
+      js.id = id;
+      js.src = "https://platform.twitter.com/widgets.js";
+      fjs.parentNode.insertBefore(js, fjs);
+    
+      t._e = [];
+      t.ready = function(f) {
+        t._e.push(f);
+      };
+    
+      return t;
+    }(document, "script", "twitter-wjs"));</script>
     <!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>Dash Incubator | Claim bounties for new ideas, specifying and working on tasks, and carring out QA on Dash blockchain software.</title>
 <meta name="generator" content="Jekyll v3.9.0" />
@@ -331,8 +347,14 @@ function bountyDetailInfo(workType){
         $('#rules-link').append(strInfoLink);
         let encodedLink = encodeURIComponent(window.location.href);
         console.log('encoded link', encodedLink);
+
+        let twitterText = 'Claim bounty rewards for helping to build Dash blockchain software - check out this task:';
+        
+        let encodedText = encodeURIComponent(twitterText);
+        encodedText = twitterText.replace("%20", "%2520");
+        let twitterUrl = `https://twitter.com/intent/tweet?url=${encodedLink}&text=${encodedText}`;
         let twitterButton = `<a class="twitter-share-button"
-    href="https://twitter.com/intent/tweet?url=${encodedLink}">Tweet</a>`
+    href="${twitterUrl}">Tweet</a>`
         $('#tweet-button').append(twitterButton);
     })
 
@@ -401,10 +423,11 @@ function bountyDetailInfo(workType){
         
       </h3>
     
+<div class="page_share">
 <div class="fb-share-button" data-layout="button" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
-<div>
-    <span id="tweet-button"></span>
+<div id="tweet-button"></div>
 </div>
+<p><br /></p>
       <h2 id="get-rewards-for-your-ideas">
         
         

@@ -111,7 +111,9 @@ header { display: none; }
 
 #reserve-button { background: #b5e853; color: black; text-shadow: none; }
 
-.fb_iframe_widget { vertical-align: top; }
+#tweet-button { display: inline-block; }
+
+.page_share { position: relative; float: left; margin-left: 0; margin-right: 0; width: 100%; clear: both; vertical-align: top; line-height: normal; }
 
 /* nav */
 .nav-container { width: 100%; text-align: center; margin-top: 10px; position: relative; }
