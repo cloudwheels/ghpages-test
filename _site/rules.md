@@ -1,16 +1,3 @@
-<div class="nav-container">
-                <div class="top-nav"><a href="index.html" class="top-nav-border">Bounties</a><a href="rules.html#" class="top-nav-border">Rewards</a><a
-                        href="rules.html">Rules</a></div>
-                <div class="nav-corner">
-                    <a href="https://github.com/dashincubator" target="_blank"><img src="assets/image/github-logo-white.png" 
-                            alt="Dash Incubator on GitHub"></a><a href="https://twitter.com/dashincubator" target="_blank"><img
-                            src="assets/image/twitter.svg" alt="Dash Incubator on Twitter"></a>
-                    <a href="http://chat.dashdevs.org" target="_blank"><img src="assets/image/discord.svg" alt="Chat on the Dash Dev Discord"></a>
-                </div>
-                <a href="./"><img class="nav-logo" src="assets/image/logo.png" alt="incubator logo"></a>
-            </div>
-
-
 # 1 Overview
 This document defines the rules for the Dash Incubator bounty fund.  Later these rules will be implemented as code in the Incubator app itself (which will ultimately be implemented as a Dash Dapp).
 ## 1.1 Links
