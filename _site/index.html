@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/assets/css/style.css?v=39080171e2fb66523d566bc7317182dc3b245b7b">
+    <meta property="og:image" content="https://cloudwheels.github.io/ghpages-test/assets/image/incubator-logo.jpg">
+    
+<!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Dash Incubator | Claim bounties for new ideas, specifying and working on tasks, and carring out QA on Dash blockchain software.</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Dash Incubator" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Claim bounties for new ideas, specifying and working on tasks, and carring out QA on Dash blockchain software." />
+<meta property="og:description" content="Claim bounties for new ideas, specifying and working on tasks, and carring out QA on Dash blockchain software." />
+<link rel="canonical" href="http://localhost:4000/" />
+<meta property="og:url" content="http://localhost:4000/" />
+<meta property="og:site_name" content="Dash Incubator" />
+<script type="application/ld+json">
+{"description":"Claim bounties for new ideas, specifying and working on tasks, and carring out QA on Dash blockchain software.","url":"http://localhost:4000/","@type":"WebSite","headline":"Dash Incubator","sameAs":["https://twitter.com/dashincubator","https://github.com/dashincubator","https://chat.dashdevs.org"],"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/image/incubator-logo.jpg"}},"name":"Dash Incubator","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+<script>
+let boardId = 'D5wypdJ0';
+</script>
+  </head>
+
+  <body>
+    
+    <div class="container">
+      <section id="main_content">
+        <!--generate anchors using liquid-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script src="./app.js"></script>
+
+<script>
+        $(document).ready(async function () {
+        console.log('board id index', boardId);
+        let data = await getTrelloAllData();
+        let lists = transformTrelloData(data);
+        //parse data to html tables & display
+        $('#list_project').append(listToTable('project', 'Project', lists.project));
+        $('#list_spec').append(listToTable('spec', 'Specification', lists.spec));
+        $('#list_service').append(listToTable('service', 'Service', lists.service));
+        $('#list_job').append(listToTable('job', 'Job', lists.job));
+        $('#list_qa').append(listToTable('qa', 'QA', lists.qa));
+
+});
+</script>
+
+<div class="nav-container">
+                <div class="top-nav"><a href="index.html" class="top-nav-border">Bounties</a><a href="rules.html#" class="top-nav-border">Rewards</a><a href="rules.html">Rules</a></div>
+                <div class="nav-corner">
+                    <a href="https://github.com/dashincubator" target="_blank"><img src="assets/image/github-logo-white.png" alt="Dash Incubator on GitHub" /></a><a href="https://twitter.com/dashincubator" target="_blank"><img src="assets/image/twitter.svg" alt="Dash Incubator on Twitter" /></a>
+                    <a href="http://chat.dashdevs.org" target="_blank"><img src="assets/image/discord.svg" alt="Chat on the Dash Dev Discord" /></a>
+                </div>
+                <a href="./"><img class="nav-logo" src="assets/image/logo.png" alt="incubator logo" /></a>
+            </div>
+      <h2 id="get-rewards-for-your-ideas">
+        
+        
+          Get rewards for your ideas <a href="#get-rewards-for-your-ideas">#</a>
+        
+        
+      </h2>
+    
+<div id="concept-info">
+Find out more about <a href="rules.html#31-concepts">creating concepts</a>
+</div>
+<p><br /></p>
+      <h1 id="available-bounties">
+        
+        
+          Available Bounties <a href="#available-bounties">#</a>
+        
+        
+      </h1>
+    
+      <h2 id="project-bounties">
+        
+        
+          PROJECT BOUNTIES <a href="#project-bounties">#</a>
+        
+        
+      </h2>
+    
+
+<div id="list_project"></div>
+      <h2 id="specification-bounties">
+        
+        
+          SPECIFICATION BOUNTIES <a href="#specification-bounties">#</a>
+        
+        
+      </h2>
+    
+
+<div id="list_spec"></div>
+      <h2 id="service-bounties">
+        
+        
+          SERVICE BOUNTIES <a href="#service-bounties">#</a>
+        
+        
+      </h2>
+    
+
+<div id="list_service"></div>
+      <h2 id="job-bounties">
+        
+        
+          JOB BOUNTIES <a href="#job-bounties">#</a>
+        
+        
+      </h2>
+    
+
+<div id="list_job"></div>
+      <h2 id="qa-bounties">
+        
+        
+          QA BOUNTIES <a href="#qa-bounties">#</a>
+        
+        
+      </h2>
+    
+
+<div id="list_qa"></div>
+
+      </section>
+    </div>
+
+    
+  </body>
+</html>
