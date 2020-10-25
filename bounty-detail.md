@@ -4,13 +4,68 @@
 <script>
     $(document).ready(async function () {
 
+    let detailsTemplate =`<table>
+    <tr>
+        <td class="bounty-item-title">Task</td>
+        <td>
+            <div id="bounty-info-name"></div>
+        </td>
+    </tr>
+    <tr>
+        <td class="bounty-item-title">Reward</td>
+        <td>
+            <div id="bounty-info-reward"></div>
+        </td>
+    </tr>
+    <tr>
+        <td class="bounty-item-title">Project</td>
+        <td>
+            <div id="bounty-info-project"></div>
+        </td>
+    </tr>
+    <tr>
+        <td class="bounty-item-title">Project Description</td>
+        <td>
+            <div id="bounty-info-desc"></div>
+        </td>
+    </tr>
+    <tr>
+        <td class="bounty-item-title">Work Type</td>
+        <td>
+            <div id="bounty-info-worktype"></div>
+        </td>
+    </tr>
+    <tr>
+        <td class="bounty-item-title">Admin</td>
+        <td>
+            <div id="bounty-info-admin"></div>
+        </td>
+    </tr>
+    <tr>
+        <td class="bounty-item-title">Status</td>
+        <td>
+            <div id="bounty-info-status"></div>
+            Available
+        </td>
+    </tr>
+</table>
+<div id="rules-link"></div>
+<div id="bounty-info-trellolink"></div>
+<br>`
+
         //get all data
         let data = await getTrelloAllData();
         let lists = transformTrelloData(data);
         let taskData = lists.project.concat(lists.spec, lists.service, lists.job, lists.qa);
         let taskId = decodeURIComponent(urlParam('taskid'));
 
-        let task = getTaskById(taskData, taskId)[0];
+        let foundTasks = getTaskById(taskData, taskId);
+
+        if(foundTasks.length===1){
+
+        $('#bounty-details').append(detailsTemplate);
+
+        let task = foundTasks[0];
 
         let workType = task.workType;
 
@@ -35,61 +90,24 @@
         let twitterButton = `<a class="twitter-share-button"
     href="${twitterUrl}">Tweet</a>`
         $('#tweet-button').append(twitterButton);
+        }
+        
+        else {
+            $('#bounty-details').append(`<p>Sorry, this bounty id couldn't be found. It may already be reserved. Check the main bounties page for other opportunities</p>`);
+            $('#page-share').prepend(`<p>Find other opportunities to share with friends on the bounties page</p>`)
+        }
     })
 
-</script>
-# Bounty Details
-<table>
-    <tr>
-        <td>Task</td>
-        <td>
-            <div id="bounty-info-name"></div>
-        </td>
-    </tr>
-    <tr>
-        <td>Reward</td>
-        <td>
-            <div id="bounty-info-reward"></div>
-        </td>
-    </tr>
-    <tr>
-        <td>Project</td>
-        <td>
-            <div id="bounty-info-project"></div>
-        </td>
-    </tr>
-    <tr>
-        <td>Project Description</td>
-        <td>
-            <div id="bounty-info-desc"></div>
-        </td>
-    </tr>
-    <tr>
-        <td>Work Type</td>
-        <td>
-            <div id="bounty-info-worktype"></div>
-        </td>
-    </tr>
-    <tr>
-        <td>Admin</td>
-        <td>
-            <div id="bounty-info-admin"></div>
-        </td>
-    </tr>
-    <tr>
-        <td>Status</td>
-        <td>
-            <div id="bounty-info-status"></div>
-            Available
-        </td>
-    </tr>
-</table>
-<div id="rules-link"></div>
-<div id="bounty-info-trellolink"></div>
-<br>
 
-### Share this bounty task
-<div class="page_share">
+
+
+</script>
+
+<h1>Bounty Details <a href="#bounty-details">#</a></h1>
+<div id="bounty-details"></div>
+
+<h3>Share this bounty task <a href="#share-this-bounty-task">#</a></h3>
+<div id='page-share' class="page_share">
 <div class="fb-share-button" data-layout="button" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
 <div id="tweet-button"></div>
 </div>

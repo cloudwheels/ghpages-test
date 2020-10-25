@@ -109,11 +109,15 @@ a { color: #63c0f5; text-shadow: 0 0 5px rgba(104, 182, 255, 0.5); }
 
 header { display: none; }
 
+.fb_iframe_widget span { vertical-align: inherit !important; }
+
 #reserve-button { background: #b5e853; color: black; text-shadow: none; }
 
 #tweet-button { display: inline-block; }
 
 .page_share { position: relative; float: left; margin-left: 0; margin-right: 0; width: 100%; clear: both; vertical-align: top; line-height: normal; }
+
+.bounty-item-title { font-weight: bold; }
 
 /* nav */
 .nav-container { width: 100%; text-align: center; margin-top: 10px; position: relative; }

@@ -7,6 +7,9 @@ header {
   display: none;
 }
 
+.fb_iframe_widget span{
+    vertical-align: inherit !important;
+}
 
 #reserve-button {
     background: #b5e853;
@@ -29,6 +32,10 @@ header {
     vertical-align: top;
     line-height: normal
 
+}
+
+.bounty-item-title{
+    font-weight: bold;
 }
 
 /* nav */
