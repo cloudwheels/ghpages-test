@@ -91,7 +91,7 @@ layout: default
                 $('#bounty-info-desc').append(task.cardDesc);
                 $('#bounty-info-admin').append(task.admin);
                 $('#bounty-info-worktype').append(workType);
-                $('#bounty-info-reward').append(task.rewardDash + ' Dash ($' + task.rewardUSD + ')');
+                $('#bounty-info-reward').append(task.rewardDash + ' DASH ($' + task.rewardUSD + ')');
                 $('#trello-instructions').prepend(`To request to reserve this ${workType} Task, add this comment on the trello card :<br>`);
                 $('#rules-explanation').append(`I want to reserve ${workType} Task #${taskNumber}`)
                 var trellolink = task.cardUrl;

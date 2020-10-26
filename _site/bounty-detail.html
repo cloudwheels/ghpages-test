@@ -5,7 +5,7 @@
   <meta charset='utf-8'>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="/assets/css/style.css?v=ceeb0f48214357cd37b6d2eb60fa20b5fb1fd074">
+  <link rel="stylesheet" href="/assets/css/style.css?v=8cf97fb5e955cd42b4b1d9a03ec3b0ed99bc3208">
   <meta property="og:image" content="https://cloudwheels.github.io/ghpages-test/assets/image/incubator-logo.jpg">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script>
@@ -272,7 +272,7 @@ const DASHUSD =  75.0;
         data.map(item => {
             //let link = `./bounty-detail.html?bountytaskid=${item.taskId}&bountytrellourl=${item.cardUrl}&bountyname=${item.checklistItemName}&bountycardname=${item.cardName}&bountycarddesc=${item.cardDesc}&bountyrewardusd=${item.rewardUSD}&bountyrewarddash=${item.rewardDash}&bountyadmin=${item.admin}&bountyworktype=${item.workType}`;
             let link = `./bounty-detail.html?taskid=${item.taskId}`;
-            strHTML += `<tr><td><div>${item.cardName}</div></td><td><div>${item.taskNumber}</div></td><td><div>${item.taskDesc}</div></td><td><div>${item.cardSkills || ''}</div></td><td><div><a href="${link}" class="btn">${item.rewardDash} Dash ($${item.rewardUSD})</a></div></td></tr>`;
+            strHTML += `<tr><td><div>${item.cardName}</div></td><td><div>${item.taskNumber}</div></td><td><div>${item.taskDesc}</div></td><td><div>${item.cardSkills || ''}</div></td><td><div><a href="${link}" class="btn">${item.rewardDash} DASH ($${item.rewardUSD})</a></div></td></tr>`;
         });
 
         strHTML += `
@@ -363,8 +363,11 @@ const DASHUSD =  75.0;
 <link rel="canonical" href="http://localhost:4000/bounty-detail.html" />
 <meta property="og:url" content="http://localhost:4000/bounty-detail.html" />
 <meta property="og:site_name" content="Dash Incubator" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Dash Incubator" />
+<meta name="twitter:site" content="@dashincubator" />
 <script type="application/ld+json">
-{"description":"Claim bounties for new ideas, specifying and working on tasks, and carring out QA on Dash blockchain software.","url":"http://localhost:4000/bounty-detail.html","@type":"WebPage","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/image/incubator-logo.jpg"}},"headline":"Dash Incubator","@context":"https://schema.org"}</script>
+{"headline":"Dash Incubator","description":"Claim bounties for new ideas, specifying and working on tasks, and carring out QA on Dash blockchain software.","url":"http://localhost:4000/bounty-detail.html","@type":"WebPage","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/image/incubator-logo.jpg"}},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 </head>
@@ -479,7 +482,7 @@ const DASHUSD =  75.0;
                 $('#bounty-info-desc').append(task.cardDesc);
                 $('#bounty-info-admin').append(task.admin);
                 $('#bounty-info-worktype').append(workType);
-                $('#bounty-info-reward').append(task.rewardDash + ' Dash ($' + task.rewardUSD + ')');
+                $('#bounty-info-reward').append(task.rewardDash + ' DASH ($' + task.rewardUSD + ')');
                 $('#trello-instructions').prepend(`To request to reserve this ${workType} Task, add this comment on the trello card :<br>`);
                 $('#rules-explanation').append(`I want to reserve ${workType} Task #${taskNumber}`)
                 var trellolink = task.cardUrl;
@@ -537,7 +540,8 @@ const DASHUSD =  75.0;
 
   
   <div class="footer">
-<a href="https://github.com/dashincubator/website">website source</a>
+<a href="https://github.com/dashincubator/website">website source</a> | 
+<a href="/sitemap.xml">sitemap</a>
 </div>
 </body>
 
