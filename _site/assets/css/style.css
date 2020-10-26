@@ -109,11 +109,23 @@ a { color: #63c0f5; text-shadow: 0 0 5px rgba(104, 182, 255, 0.5); }
 
 header { display: none; }
 
+#bounty-header { text-align: center; }
+
+#bounty-header h1 { color: white; }
+
+#concept-info { border-width: 2px; border-color: #b5e853; border-style: solid; margin: 10px; padding: 10px; }
+
 .fb_iframe_widget span { vertical-align: inherit !important; }
 
-#rules-explanation { border-width: 2px; border-color: #b5e853; border-style: solid; margin: 10px; padding: 10px; }
+#trello-instructions { border-width: 2px; border-color: #b5e853; border-style: solid; margin: 10px; padding: 10px; }
 
-#reserve-button { background: #b5e853; color: black; text-shadow: none; }
+#rules-explanation { color: black; background-color: white; margin: 10px; padding: 10px; }
+
+#trello-link { margin: 10px; padding: 10px; }
+
+.btn { background: #b5e853; color: black; text-shadow: none; white-space: nowrap; }
+
+.btn:hover { background: #b5e853; color: black; text-shadow: none; white-space: nowrap; }
 
 #tweet-button { display: inline-block; }
 

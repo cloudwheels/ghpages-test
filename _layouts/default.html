@@ -34,8 +34,7 @@
     {% include page_header.html %}
     <div class="container">
       <section id="main_content">
-        <!--generate anchors using liquid-->
-        {% include anchor_headings.html html=content anchorBody="#" %}
+        {{ content }}
       </section>
     </div>
 

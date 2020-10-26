@@ -353,17 +353,20 @@ const DASHUSD =  75.0;
     }(document, "script", "twitter-wjs"));</script>
   
     <!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Dash Incubator | Claim bounties for new ideas, specifying and working on tasks, and carring out QA on Dash blockchain software.</title>
+<title>New Incubator Bounty System Soft Launch | Dash Incubator</title>
 <meta name="generator" content="Jekyll v3.9.0" />
-<meta property="og:title" content="Dash Incubator" />
+<meta property="og:title" content="New Incubator Bounty System Soft Launch" />
+<meta name="author" content="andy freer" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Claim bounties for new ideas, specifying and working on tasks, and carring out QA on Dash blockchain software." />
-<meta property="og:description" content="Claim bounties for new ideas, specifying and working on tasks, and carring out QA on Dash blockchain software." />
-<link rel="canonical" href="http://localhost:4000/" />
-<meta property="og:url" content="http://localhost:4000/" />
+<meta name="description" content="Story so far Since the bounty system was launched it has been successful in doing stuff like jembe" />
+<meta property="og:description" content="Story so far Since the bounty system was launched it has been successful in doing stuff like jembe" />
+<link rel="canonical" href="http://localhost:4000/2020/11/01/new-incubator-bounty-system-soft-launch.html" />
+<meta property="og:url" content="http://localhost:4000/2020/11/01/new-incubator-bounty-system-soft-launch.html" />
 <meta property="og:site_name" content="Dash Incubator" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-11-01T00:00:00+00:00" />
 <script type="application/ld+json">
-{"description":"Claim bounties for new ideas, specifying and working on tasks, and carring out QA on Dash blockchain software.","url":"http://localhost:4000/","@type":"WebSite","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/image/incubator-logo.jpg"}},"headline":"Dash Incubator","sameAs":["https://twitter.com/dashincubator","https://github.com/dashincubator","https://chat.dashdevs.org"],"name":"Dash Incubator","@context":"https://schema.org"}</script>
+{"author":{"@type":"Person","name":"andy freer"},"description":"Story so far Since the bounty system was launched it has been successful in doing stuff like jembe","url":"http://localhost:4000/2020/11/01/new-incubator-bounty-system-soft-launch.html","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2020/11/01/new-incubator-bounty-system-soft-launch.html"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/image/incubator-logo.jpg"},"name":"andy freer"},"headline":"New Incubator Bounty System Soft Launch","dateModified":"2020-11-01T00:00:00+00:00","datePublished":"2020-11-01T00:00:00+00:00","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
   </head>
@@ -382,66 +385,13 @@ const DASHUSD =  75.0;
 </div>
     <div class="container">
       <section id="main_content">
-        <script>
-        
-        $(document).ready(async function () {
-        //console.log('board id index', boardId);
-        $('#loading-data').show();
-        
-        try{
-        let data = await getTrelloAllData();
-        $('#loading-data').hide();
-        let lists = transformTrelloData(data);
-        //parse data to html tables & display
-        $('#list_project').append(listToTable('project', 'Project', lists.project));
-        $('#list_spec').append(listToTable('spec', 'Specification', lists.spec));
-        $('#list_service').append(listToTable('service', 'Service', lists.service));
-        $('#list_job').append(listToTable('job', 'Job', lists.job));
-        $('#list_qa').append(listToTable('qa', 'QA', lists.qa));
-        }
-        catch(e){
-                $('#loading-data').css("background-color","red");
-                $('#loading-data').text(`There was an error loading the data: ${e}`);
-                $('#loading-data').show();
-        }
+        <h1>New Incubator Bounty System Soft Launch</h1>
+<p>01 Nov 2020 - andy freer</p>
 
-});
-</script>
+<h2 id="story-so-far">Story so far</h2>
+<p>Since the bounty system was launched it has been successful in doing stuff like <a href="http://jembe.dashevo.io">jembe</a></p>
 
-<div id="bounty-header">
-<h1>BOUNTIES</h1>
-</div>
-<p>Dash Incubator is an open-source blockchain-funded app that distributes Dash proposal rewards to anyone who can provide open-source output that adds value to Dash. The  focus is creating useful Dapps and scaling the Platform ecosystem.
-</p>
-<p>
-The fund’s aim is to provide a fully incentivized work system that’s easy to use so anyone can earn Dash for contributing valuable output, both for Dash Incubator and as a model / system anyone else can ‘white label’ into their own fund within the Dash ecosystem.
-</p>
-
-<h2 id="concept">CONCEPT</h2>
-<div id="concept-info">
-<h3>Get rewards for your ideas!</h3>
-Learn more about <a href="rules.html#31-concepts">creating concepts</a>
-</div>
-<div id="loading-data" style="display:none;">Loading data...</div>
-<h2 id="project">PROJECT</h2>
-
-<div id="list_project"></div>
-
-<h2 id="specification">SPECIFICATION</h2>
-
-<div id="list_spec"></div>
-
-<h2 id="service">SERVICE</h2>
-
-<div id="list_service"></div>
-
-<h2 id="job">JOB</h2>
-
-<div id="list_job"></div>
-
-<h2 id="qa">QA</h2>
-
-<div id="list_qa"></div>
+<h2 id="next-steps">Next steps</h2>
 
       </section>
     </div>
