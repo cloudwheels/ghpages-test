@@ -23,35 +23,37 @@
 
 });
 </script>
-
-<div id="bounty-header">
-<h1>BOUNTIES</h1>
-</div>
 <p>Dash Incubator is an open-source blockchain-funded app that distributes Dash proposal rewards to anyone who can provide open-source output that adds value to Dash. The  focus is creating useful Dapps and scaling the Platform ecosystem.
 </p>
 <p>
 The fund’s aim is to provide a fully incentivized work system that’s easy to use so anyone can earn Dash for contributing valuable output, both for Dash Incubator and as a model / system anyone else can ‘white label’ into their own fund within the Dash ecosystem.
 </p>
 
-## CONCEPT
+<div id="bounty-header">
+<h1>BOUNTIES</h1>
+</div>
+
+
+## CONCEPTS
 <div id="concept-info">
 <h3>Get rewards for your ideas!</h3>
 Learn more about <a href="rules.html#31-concepts">creating concepts</a>
 </div>
 <div id="loading-data" style="display:none;">Loading data...</div>
-## PROJECT
+
+## PROJECTS
 
 <div id="list_project"></div>
 
-## SPECIFICATION
+## SPECIFICATIONS
 
 <div id="list_spec"></div>
 
-## SERVICE
+## SERVICES
 
 <div id="list_service"></div>
 
-## JOB
+## JOBS
 
 <div id="list_job"></div>
 

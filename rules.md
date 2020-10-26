@@ -1,4 +1,6 @@
-View <a href="https://github.com/cloudwheels/ghpages-test/commits/gh-pages/rules.md" target="_blank">RULES HISTORY</a>
+View <a href="https://github.com/cloudwheels/ghpages-test/commits/gh-pages/rules.md" target="_blank">PROTOCOL HISTORY</a>
+
+# PROTOCOL
 
 # 1 Overview
 This document defines the rules for the Dash Incubator bounty fund.  Later these rules will be implemented as code in the Incubator app itself (which will ultimately be implemented as a Dash Dapp).
