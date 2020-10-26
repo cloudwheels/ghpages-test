@@ -7,8 +7,17 @@ header {
   display: none;
 }
 
-.fb_iframe_widget span{
+.fb_iframe_widget span {
     vertical-align: inherit !important;
+}
+
+#rules-explanation{
+    border-width: 2px;
+    border-color: #b5e853;
+    border-style:solid;
+    margin:10px;
+    padding:10px;
+
 }
 
 #reserve-button {
@@ -22,7 +31,7 @@ header {
     display: inline-block;
 }
 
-.page_share{
+.page_share {
     position: relative;
     float: left;
     margin-left: 0;
@@ -34,7 +43,7 @@ header {
 
 }
 
-.bounty-item-title{
+.bounty-item-title {
     font-weight: bold;
 }
 

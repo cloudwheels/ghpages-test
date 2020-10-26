@@ -49,8 +49,9 @@
         </td>
     </tr>
 </table>
-<div id="rules-link"></div>
+<div id="rules-explanation"></div>
 <div id="bounty-info-trellolink"></div>
+<div id="rules-link"></div>
 <br>`
 
         //get all data
@@ -75,7 +76,8 @@
         $('#bounty-info-admin').append(task.admin);
         $('#bounty-info-worktype').append(workType)
         $('#bounty-info-reward').append(task.rewardDash + ' Dash ($' + task.rewardUSD + ')')
-        var trellolink = task.cardUrl;
+        $('#rules-explanation').append(`To request to reserve this ${workType} Task, add this comment on the trello card :<br>I want to reserve [Work] Task`)
+        var trellolink = task.cardUrl;       
         $('#bounty-info-trellolink').append('<a id="reserve-button" class="btn" href="' + trellolink + '">RESERVE BOUNTY</a>')
         let strInfoLink = bountyDetailInfo(workType);
         $('#rules-link').append(strInfoLink);
@@ -106,7 +108,6 @@
 <h1>Bounty Details <a href="#bounty-details">#</a></h1>
 <div id="bounty-details"></div>
 
-<h3>Share this bounty task <a href="#share-this-bounty-task">#</a></h3>
 <div id='page-share' class="page_share">
 <div class="fb-share-button" data-layout="button" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
 <div id="tweet-button"></div>

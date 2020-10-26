@@ -4,7 +4,7 @@
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/assets/css/style.css?v=baaa40582c363f2cd266335a504979224797226a">
+    <link rel="stylesheet" href="/assets/css/style.css?v=33898e1370339374163ef244acc62b343d282132">
     <meta property="og:image" content="https://cloudwheels.github.io/ghpages-test/assets/image/incubator-logo.jpg">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
@@ -373,8 +373,9 @@ function bountyDetailInfo(workType){
         </td>
     </tr>
 </table>
-<div id="rules-link"></div>
+<div id="rules-explanation"></div>
 <div id="bounty-info-trellolink"></div>
+<div id="rules-link"></div>
 <br>`
 
         //get all data
@@ -399,7 +400,8 @@ function bountyDetailInfo(workType){
         $('#bounty-info-admin').append(task.admin);
         $('#bounty-info-worktype').append(workType)
         $('#bounty-info-reward').append(task.rewardDash + ' Dash ($' + task.rewardUSD + ')')
-        var trellolink = task.cardUrl;
+        $('#rules-explanation').append(`To request to reserve this ${workType} Task, add this comment on the trello card :<br>I want to reserve [Work] Task`)
+        var trellolink = task.cardUrl;       
         $('#bounty-info-trellolink').append('<a id="reserve-button" class="btn" href="' + trellolink + '">RESERVE BOUNTY</a>')
         let strInfoLink = bountyDetailInfo(workType);
         $('#rules-link').append(strInfoLink);
@@ -435,14 +437,7 @@ function bountyDetailInfo(workType){
       </h1>
     
 <div id="bounty-details"></div>
-      <h3>
-        
-        
-          Share this bounty task <a href="#share-this-bounty-task">#</a>
-        
-        
-      </h3>
-    
+
 <div id="page-share" class="page_share">
 <div class="fb-share-button" data-layout="button" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
 <div id="tweet-button"></div>
