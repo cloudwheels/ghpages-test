@@ -1,4 +1,4 @@
-View <a href="https://github.com/cloudwheels/ghpages-test/commits/gh-pages/rules.md" target="_blank">PROTOCOL HISTORY</a>
+View [PROTOCOL HISTORY](https://github.com/cloudwheels/ghpages-test/commits/gh-pages/rules.md)
 
 # PROTOCOL
 
