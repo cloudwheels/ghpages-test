@@ -9,6 +9,9 @@ logo: /assets/image/incubator-logo.jpg
 board: D5wypdJ0
 # Dash USD rate as float (e.g. 75.00)
 dashusd: 75.00
+twitter:
+  username: dashincubator
+  card: summary
 social:
   name: Dash Incubator
   links:
