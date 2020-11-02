@@ -111,9 +111,7 @@ header { display: none; }
 
 .footer { padding: 50px; text-align: center; }
 
-#bounty-header { text-align: center; }
-
-#bounty-header h1 { color: white; }
+.white-header-center { text-align: center; color: white; }
 
 #concept-info { border-width: 2px; border-color: #b5e853; border-style: solid; margin: 10px; margin-bottom: 20px; padding: 10px; }
 
