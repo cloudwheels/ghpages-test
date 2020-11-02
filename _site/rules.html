@@ -5,7 +5,7 @@
   <meta charset='utf-8'>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="/assets/css/style.css?v=3230171fcc08524768ce3f130322402257a429c4">
+  <link rel="stylesheet" href="/assets/css/style.css?v=e721848b86a6be3a5063917e9b8451f474c95f4b">
   <meta property="og:image" content="https://cloudwheels.github.io/ghpages-test/assets/image/incubator-logo.jpg">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script>
@@ -108,7 +108,7 @@ const DASHUSD =  75.0;
         //filter tasks to lists
         let lists = {}
 
-        lists.project = tasks.filter(item => item.checklistName == 'Work Tasks' && item.workType == 'Project');
+        lists.project = tasks.filter(item => item.checklistName == 'Work Tasks' && item.workType == 'Production');
         lists.spec = tasks.filter(item => item.checklistName == 'Specification Tasks');
         lists.service = tasks.filter(item => item.checklistName == 'Work Tasks' && item.workType == 'Service');
         lists.job = tasks.filter(item => item.checklistName == 'Work Tasks' && item.workType == 'Job');
@@ -142,7 +142,7 @@ const DASHUSD =  75.0;
             .map(value => {
                 switch (value.idValue) {
                     case customFieldWorkTypeValueProject:
-                        customFields.workType = 'Project'
+                        customFields.workType = 'Production'
                         break;
                     case customFieldWorkTypeValueService:
                         customFields.workType = 'Service'

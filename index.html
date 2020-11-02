@@ -12,7 +12,7 @@ layout: default
                         $('#loading-data').hide();
                         let lists = transformTrelloData(data);
                         //parse data to html tables & display
-                        $('#list_project').append(listToTable('project', 'Project', lists.project));
+                        $('#list_project').append(listToTable('production', 'Production', lists.project));
                         $('#list_spec').append(listToTable('spec', 'Specification', lists.spec));
                         $('#list_service').append(listToTable('service', 'Service', lists.service));
                         $('#list_job').append(listToTable('job', 'Job', lists.job));
@@ -27,21 +27,21 @@ layout: default
         });
 </script>
 
-<p>Dash Incubator is an open-source blockchain-funded app that distributes Dash proposal rewards to anyone who can
-        provide open-source output that adds value to Dash. The focus is creating useful Dapps and scaling the Platform
-        ecosystem.
+<p>
+Dash Incubator is an open-source app that connects users who want to earn rewards for working together to improve the Dash cryptocurrency.
 </p>
 <p>
-        The fund’s aim is to provide a fully incentivized work system that’s easy to use so anyone can earn Dash for
-        contributing valuable output, both for Dash Incubator and as a model / system anyone else can ‘white label’ into
-        their own fund within the Dash ecosystem.
+Funded from a Dash blockchain proposal and focused on developing tools, infrastructure and Dapps for Dash’s Evolution upgrade, any kind of work that aligns with our strategy can be incentivized, and worked on together with full transparency.
 </p>
+<p>     
+Whether you want to propose ideas, develop code, manage & promote projects, or improve the Incubator app itself, check the bounties below or join the Dash Devs <a href="http://chat.dashdevs.org" target="_blank">Discord</a> server to chat with like-minded people in the #dash-incubator channel.
+</p>
+
 
 <div id="bounty-header">
         <h1>BOUNTIES</h1>
 </div>
-<p>This is a list of tasks for which rewards are available. Etiam lobortis ante massa, at aliquet justo pharetra porta. Nullam in ultricies arcu. Interdum et malesuada fames ac ante ipsum
-        primis in faucibus. Sed ut interdum massa, et sollicitudin metus. Vivamus quis arcu orci. Cras eleifend.
+<p>This is a list of tasks for which rewards are available.
 </p>
 
 <h2>CONCEPTS</h2>
@@ -51,7 +51,7 @@ layout: default
 </div>
 <div id="loading-data" style="display:none;">Loading data...</div>
 
-<h2>PROJECTS</h2>
+<h2>PRODUCTION</h2>
 
 <div id="list_project"></div>
 

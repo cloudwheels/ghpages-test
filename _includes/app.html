@@ -94,7 +94,7 @@
         //filter tasks to lists
         let lists = {}
 
-        lists.project = tasks.filter(item => item.checklistName == 'Work Tasks' && item.workType == 'Project');
+        lists.project = tasks.filter(item => item.checklistName == 'Work Tasks' && item.workType == 'Production');
         lists.spec = tasks.filter(item => item.checklistName == 'Specification Tasks');
         lists.service = tasks.filter(item => item.checklistName == 'Work Tasks' && item.workType == 'Service');
         lists.job = tasks.filter(item => item.checklistName == 'Work Tasks' && item.workType == 'Job');
@@ -128,7 +128,7 @@
             .map(value => {
                 switch (value.idValue) {
                     case customFieldWorkTypeValueProject:
-                        customFields.workType = 'Project'
+                        customFields.workType = 'Production'
                         break;
                     case customFieldWorkTypeValueService:
                         customFields.workType = 'Service'
