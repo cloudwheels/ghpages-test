@@ -108,10 +108,10 @@ const DASHUSD =  75.0;
         //filter tasks to lists
         let lists = {}
 
-        lists.project = tasks.filter(item => item.checklistName == 'Work Tasks' && item.workType == 'Production');
+        lists.project = tasks.filter(item => item.checklistName == 'Production Tasks' && item.workType == 'Project');
         lists.spec = tasks.filter(item => item.checklistName == 'Specification Tasks');
-        lists.service = tasks.filter(item => item.checklistName == 'Work Tasks' && item.workType == 'Service');
-        lists.job = tasks.filter(item => item.checklistName == 'Work Tasks' && item.workType == 'Job');
+        lists.service = tasks.filter(item => item.checklistName == 'Production Tasks' && item.workType == 'Service');
+        lists.job = tasks.filter(item => item.checklistName == 'Production Tasks' && item.workType == 'Job');
         lists.qa = tasks.filter(item => item.checklistName == 'QA Tasks');
 
 
@@ -142,7 +142,7 @@ const DASHUSD =  75.0;
             .map(value => {
                 switch (value.idValue) {
                     case customFieldWorkTypeValueProject:
-                        customFields.workType = 'Production'
+                        customFields.workType = 'Project'
                         break;
                     case customFieldWorkTypeValueService:
                         customFields.workType = 'Service'
@@ -359,8 +359,8 @@ const DASHUSD =  75.0;
 <meta property="og:title" content="New Incubator Bounty System Soft Launch" />
 <meta name="author" content="andy freer" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Here’s a quick summary excerpt of what this post is about. Andy talks turkey…" />
-<meta property="og:description" content="Here’s a quick summary excerpt of what this post is about. Andy talks turkey…" />
+<meta name="description" content="Announcing the soft launch of the Dash Incubator app…" />
+<meta property="og:description" content="Announcing the soft launch of the Dash Incubator app…" />
 <link rel="canonical" href="http://localhost:4000/2020/11/01/new-incubator-bounty-system-soft-launch.html" />
 <meta property="og:url" content="http://localhost:4000/2020/11/01/new-incubator-bounty-system-soft-launch.html" />
 <meta property="og:site_name" content="Dash Incubator" />
@@ -371,7 +371,7 @@ const DASHUSD =  75.0;
 <meta name="twitter:site" content="@dashincubator" />
 <meta name="twitter:creator" content="@andy freer" />
 <script type="application/ld+json">
-{"author":{"@type":"Person","name":"andy freer"},"headline":"New Incubator Bounty System Soft Launch","dateModified":"2020-11-01T00:00:00+00:00","datePublished":"2020-11-01T00:00:00+00:00","description":"Here’s a quick summary excerpt of what this post is about. Andy talks turkey…","url":"http://localhost:4000/2020/11/01/new-incubator-bounty-system-soft-launch.html","@type":"BlogPosting","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/image/incubator-logo.jpg"},"name":"andy freer"},"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2020/11/01/new-incubator-bounty-system-soft-launch.html"},"@context":"https://schema.org"}</script>
+{"author":{"@type":"Person","name":"andy freer"},"headline":"New Incubator Bounty System Soft Launch","dateModified":"2020-11-01T00:00:00+00:00","datePublished":"2020-11-01T00:00:00+00:00","description":"Announcing the soft launch of the Dash Incubator app…","url":"http://localhost:4000/2020/11/01/new-incubator-bounty-system-soft-launch.html","@type":"BlogPosting","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/image/incubator-logo.jpg"},"name":"andy freer"},"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2020/11/01/new-incubator-bounty-system-soft-launch.html"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 </head>

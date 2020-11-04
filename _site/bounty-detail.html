@@ -108,10 +108,10 @@ const DASHUSD =  75.0;
         //filter tasks to lists
         let lists = {}
 
-        lists.project = tasks.filter(item => item.checklistName == 'Work Tasks' && item.workType == 'Production');
+        lists.project = tasks.filter(item => item.checklistName == 'Production Tasks' && item.workType == 'Project');
         lists.spec = tasks.filter(item => item.checklistName == 'Specification Tasks');
-        lists.service = tasks.filter(item => item.checklistName == 'Work Tasks' && item.workType == 'Service');
-        lists.job = tasks.filter(item => item.checklistName == 'Work Tasks' && item.workType == 'Job');
+        lists.service = tasks.filter(item => item.checklistName == 'Production Tasks' && item.workType == 'Service');
+        lists.job = tasks.filter(item => item.checklistName == 'Production Tasks' && item.workType == 'Job');
         lists.qa = tasks.filter(item => item.checklistName == 'QA Tasks');
 
 
@@ -142,7 +142,7 @@ const DASHUSD =  75.0;
             .map(value => {
                 switch (value.idValue) {
                     case customFieldWorkTypeValueProject:
-                        customFields.workType = 'Production'
+                        customFields.workType = 'Project'
                         break;
                     case customFieldWorkTypeValueService:
                         customFields.workType = 'Service'
